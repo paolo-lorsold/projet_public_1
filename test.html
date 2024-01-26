@@ -32,6 +32,17 @@
             background-color: #333;
             color: #fff;
         }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+        }
     </style>
 </head>
 
@@ -46,15 +57,14 @@
         <p>Bienvenue sur ma première page web!</p>
     </section>
 
-    <section>
-        <h2>Section 2</h2>
-        <p>Ceci est un exemple simple de page HTML.</p>
-    </section>
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>&copy; 2024 Ma Page Web. Tous droits réservés.</p>
-    </footer>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
 
-</body>
-
-</html>
+            <label for="message">Message :</label>
+            <textarea id="message" name="mess
